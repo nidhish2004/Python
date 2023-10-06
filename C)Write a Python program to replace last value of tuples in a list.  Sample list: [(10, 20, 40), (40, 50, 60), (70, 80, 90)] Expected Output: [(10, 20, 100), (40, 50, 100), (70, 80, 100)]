@@ -1,0 +1,11 @@
+# Sample list of tuples
+tuple_list = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+# Value to replace the last element with
+new_value = 100
+
+# Use a list comprehension to create a new list with updated tuples
+updated_list = [(x, y, new_value) for x, y, _ in tuple_list]
+
+# Print the updated list
+print(updated_list)
