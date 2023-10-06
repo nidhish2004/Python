@@ -1,0 +1,31 @@
+def count_characters(input_string):
+    # Initialize counts
+    digit_count = 0
+    uppercase_count = 0
+    lowercase_count = 0
+    special_count = 0
+
+    # Iterate through each character in the string
+    for char in input_string:
+        if char.isdigit():
+            digit_count += 1
+        elif char.isupper():
+            uppercase_count += 1
+        elif char.islower():
+            lowercase_count += 1
+        else:
+            special_count += 1
+
+    return digit_count, uppercase_count, lowercase_count, special_count
+
+# Input string
+input_string = input("Enter a string: ")
+
+# Call the function to count characters
+digit_count, uppercase_count, lowercase_count, special_count = count_characters(input_string)
+
+# Display the results
+print("Digits:", digit_count)
+print("Uppercase characters:", uppercase_count)
+print("Lowercase characters:", lowercase_count)
+print("Special characters:", special_count)
