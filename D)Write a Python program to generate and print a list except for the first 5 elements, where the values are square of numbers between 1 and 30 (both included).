@@ -1,0 +1,9 @@
+# Generate a list of squares of numbers from 1 to 30
+squares_list = [x ** 2 for x in range(1, 31)]
+
+# Slice the list to exclude the first 5 elements
+result_list = squares_list[5:]
+
+# Print the result list
+print(result_list)
+OUTPUT:[36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024, 1089, 1156, 1225]
