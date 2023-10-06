@@ -1,0 +1,19 @@
+# Input from the user
+user_input = input("Enter a character or a number: ")
+
+# Check if the input is a digit
+if user_input.isdigit():
+    print(f"'{user_input}' is a number.")
+else:
+    # Check if the input is a single character
+    if len(user_input) == 1:
+        # Check if it's an uppercase letter
+        if user_input.isupper():
+            print(f"'{user_input}' is an uppercase character.")
+        # Check if it's a lowercase letter
+        elif user_input.islower():
+            print(f"'{user_input}' is a lowercase character.")
+        else:
+            print(f"'{user_input}' is not a letter.")
+    else:
+        print(f"'{user_input}' is not a single character.")
