@@ -1,0 +1,18 @@
+# Function to count tabs, spaces, and newline characters in a file
+def count_tabs_spaces_newlines(filename):
+    try:
+        with open(filename, 'r') as file:
+            content = file.read()
+            tab_count = content.count('\t')
+            space_count = content.count(' ')
+            newline_count = content.count('\n')
+            return tab_count, space_count, newline_count
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+        return None
+
+# Main program
+if __name__ == "__main__":
+    filename = input("Enter the name of the file: ")
+
+    counts ==0
