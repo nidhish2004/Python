@@ -1,0 +1,23 @@
+# Questions and answers in separate lists
+questions = ["What is the capital of France?", "Which planet is known as the Red Planet?", "What is 2 + 2?"]
+answers = ["Paris", "Mars", "4"]
+
+# Combine questions and answers using zip
+quiz_data = list(zip(questions, answers))
+
+# Quiz function
+def run_quiz(quiz_data):
+    score = 0
+    for question, correct_answer in quiz_data:
+        user_answer = input(f"{question} ")
+        if user_answer.lower() == correct_answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Wrong! The correct answer is {correct_answer}.")
+    
+    print(f"You scored {score}/{len(quiz_data)}")
+
+# Run the quiz
+print("Welcome to the Quiz!")
+run_quiz(quiz_data)
