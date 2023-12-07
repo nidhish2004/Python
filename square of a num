@@ -1,0 +1,4 @@
+import math
+num=float(input(&quot;Enter the number:&quot;))
+print(&quot;Square number=&quot;,math.pow(num,2))
+print(&quot;Cube number=&quot;,round(math.pow(num,3),3))
