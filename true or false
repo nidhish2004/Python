@@ -1,0 +1,8 @@
+num=int(input(&quot;Enter the number:&quot;))
+result=num
+while result!=1 and result!=4:
+result=(happy(result))
+if result==1:
+print(&quot;True&quot;)
+elif result==4:
+print(&quot;False&quot;)
